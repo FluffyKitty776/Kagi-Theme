@@ -1,5 +1,22 @@
+<style>
+img {
+	padding: none;
+	margin: none;
+} 
+</style>
 # Kagi Theme
- This is a custom theme for Kagi Search
+
+This is a custom theme for Kagi Search
+
+## Screenshots
+
+![Show.001](images/Show.001.png)
+
+![Show.002](images/Show.002.png)
+
+![Show.003](images/Show.003.png)
+
+![Show.004](images/Show.004.png)
 
 ## Usage
 
