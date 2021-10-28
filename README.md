@@ -8,18 +8,20 @@ This is a custom theme for Kagi Search
 
 ![Show.002](images/Show.002.png)
 
-![Show.003](images/info panel.light.png)
+![Show.003](images/info&#32;panel.light.png)
 
 ![Show.003](images/Show.003.png)
 
 ![Show.004](images/Show.004.png)
 
-## ![Show.003](images/info panel.dark.png)
+## ![Show.003](images/info&#32;panel.dark.png)
 
 ## Usage
 
 In the Kagi Search engine navigate to the appearence settings, then at the bottom there should be a "custom css" option, choose that then copy the full contents of theme.css into the field and save. 
+If you want the ball in the background, is is *slightly* more complex, that is you must copy the contents of ball.svg to the top of the custom css field and then the contents og theme.css below it, 
 
+**for reference theme.css is in the dist folder, as of now theme.scss will not work in the custom css field**
 ## Ideas for later
 
 - [ ] Add support for userstyle browser extensions
