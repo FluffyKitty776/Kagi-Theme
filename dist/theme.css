@@ -1,15 +1,7 @@
 @charset "UTF-8";
 /*
  * File Created: Wednesday, 27th October 2021
- * Author: Chris Merrill (clamerrill02@gmail.com)
- * -----
- * Last Modified: Wednesday, 27th October 2021
- * -----
- * Copyright 2021 - 2021 FluffyKitty
- */
-/*
- * File Created: Wednesday, 27th October 2021
- * Author: Chris Merrill (clamerrill02@gmail.com)
+ * Author: FluffyKitty (fluffykitty@myself.com)
  * -----
  * Last Modified: Wednesday, 27th October 2021
  * -----
@@ -82,4 +74,43 @@ button {
 }
 .app-sidebar .app-sidebar-content {
   background-color: var(--search-result-date-new-bg);
+}
+
+[data-path="/images"] .k-tooltip {
+  z-index: 999;
+}
+
+.k-tooltip {
+  border: 2pt solid black;
+}
+
+.ball-1 {
+  position: absolute;
+  right: -40mm;
+  top: 10mm;
+  z-index: 0;
+}
+
+.right-content-box {
+  z-index: 1;
+}
+
+.wikipediaContent {
+  background-color: var(--color-secondary-dim_7);
+  border: 2pt solid black;
+  padding: 0.5em;
+}
+
+.app-beta-tag {
+  display: none;
+}
+
+body {
+  background-color: whitesmoke;
+  background: linear-gradient(180deg, var(--result-item-highlight) 0%, var(--inline-widget-bg) 100%);
+}
+
+.app-box-center {
+  background-color: whitesmoke;
+  background-color: var(--color-secondary-dim_6);
 }
