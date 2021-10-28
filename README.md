@@ -8,9 +8,13 @@ This is a custom theme for Kagi Search
 
 ![Show.002](images/Show.002.png)
 
+![Show.003](images/info panel.light.png)
+
 ![Show.003](images/Show.003.png)
 
 ![Show.004](images/Show.004.png)
+
+## ![Show.003](images/info panel.dark.png)
 
 ## Usage
 
