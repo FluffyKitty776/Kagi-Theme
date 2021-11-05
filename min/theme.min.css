@@ -1,0 +1,212 @@
+@charset "UTF-8";
+:root {
+    font-size: 14pt;
+    --background-color: #d6a6f4;
+    --border-radius: 8pt;
+    --custom-primary: #865aa5;
+    --custom-secondary: #944869;
+    --app-sidebar-link: white
+}
+
+.theme_dark {
+    --background-color: #302637
+}
+
+.wiki-desc-box {
+    color: #fff
+}
+
+.wikipediaResult a {
+    color: #d2bffc
+}
+
+.wikipediaResult a:hover {
+    font-weight: bolder;
+    color: #ac8feb
+}
+
+.wikipediaTable td,
+.wikipediaTable td span {
+    color: #f5f5f5
+}
+
+.__sri-time.--new {
+    background-color: #df8fbf;
+    color: #000;
+    font-size: 1.2em
+}
+
+.autosugg-landing .search-submit-wrapper #searchFormSubmit:before {
+    content: ""
+}
+
+.autosugg-landing .search-submit-wrapper #searchFormSubmit:after {
+    content: "  the Web"
+}
+
+.logo svg {
+    height: 92pt;
+    aspect-ratio: auto 272/92;
+    width: 400pt;
+    text-align: -webkit-center;
+    position: relative;
+    right: 165pt;
+    top: 100pt
+}
+
+button {
+    padding: 12pt;
+    background-color: var(--color-secondary);
+    font-size: 14pt;
+    color: var(--color-secondary);
+    border: none;
+    border-radius: var(--border-radius);
+    height: 40dp
+}
+
+.btn.--secondary {
+    color: var(--color-primary);
+    background-color: var(--color-secondary)
+}
+
+.btn.--secondary:hover {
+    color: var(--color-secondary);
+    background-color: var(--color-primary_hover)
+}
+
+.button.btn-search {
+    color: var(--color-primary)
+}
+
+.button.btn-search.--active {
+    background-color: var(--app-logo-bg);
+    color: var(--color-secondary)
+}
+
+.search-submit-wrapper button[type=submit] {
+    position: relative;
+    bottom: 40pt
+}
+
+.footer.footer-landing .footerInner ul li a {
+    color: var(--result-item-title-border)
+}
+
+.center-content-box .search-form .search-input-container .search-input {
+    border-radius: var(--border-radius);
+    border-bottom: var(--color-primary) solid 2pt
+}
+
+.app-sidebar {
+    background-color: var(--color-primary)
+}
+
+.app-sidebar .app-sidebar-content {
+    background-color: var(--search-result-date-new-bg)
+}
+
+[data-path="/images"] .k-tooltip {
+    z-index: 999
+}
+
+.k-tooltip {
+    border: 2pt solid #000
+}
+
+.ball-1 {
+    position: absolute;
+    right: -40mm;
+    top: 10mm;
+    z-index: 0
+}
+
+.right-content-box {
+    z-index: 1
+}
+
+.wikipediaContent {
+    background-color: var(--custom-secondary);
+    border: 2pt solid #000;
+    padding: .5em;
+    color: #fff
+}
+
+.app-beta-tag {
+    display: none
+}
+
+.app-box-center {
+    background-color: #f5f5f5
+}
+
+.search-input-container>.search-input {
+    background-color: var(--custom-primary);
+    color: #f5f5f5;
+    padding: .6em;
+    border-radius: var(--border-radius)
+}
+
+.app-header .search-form:after:hover {
+    background: linear-gradient(90deg, var(--header-bg-opac) 0, var(--header-bg) 100%)
+}
+
+.app-header {
+    background-color: var(--header-bg_hover)
+}
+
+.search-form .search-input:not(:placeholder-shown)~.search-form-icons .clear-search:hover {
+    background-color: grey
+}
+
+.search-form .search-form-icons {
+    display: flex
+}
+
+.app-sidebar,
+div.app-sidebar-content {
+    background-color: var(--custom-secondary)!important;
+    color: #f5f5f5
+}
+
+.wikipediaResult .wiki-image.img img {
+    border-radius: var(--border-radius)
+}
+
+.widgetContent .widgetItems .widgetItem {
+    background-color: var(--custom-secondary)
+}
+
+.widget-provider {
+    color: #fff
+}
+
+.box {
+    background-color: var(--custom-secondary)
+}
+
+.box:hover .videoResultTitle {
+    color: #fff
+}
+
+.widget-time-ago {
+    color: #fff
+}
+
+div.video-items a:hover div.widget-body,
+div.widgetItems a:hover div.widget-body {
+    background-color: #944869!important;
+    transition: .2s ease-out!important
+}
+
+.theme_dark .app-box-center {
+    background-color: var(--background-color)
+}
+
+.theme_dark .app-sidebar,
+.theme_dark div.app-sidebar-content {
+    background-color: var(--custom-secondary)
+}
+
+.theme_dark .wikipediaContent {
+    border-color: #fff
+}

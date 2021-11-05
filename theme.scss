@@ -1,24 +1,251 @@
 /*
- * File Created: Wednesday, 27th October 2021
- * Author: FluffyKitty (fluffykitty@myself.com)
- * -----
- * Last Modified: Wednesday, 27th October 2021
- * -----
- * Copyright 2021 - 2021 FluffyKitty
- */
+* File Created: Wednesday, 27th October 2021
+* Author: FluffyKitty (fluffykitty@myself.com)
+* -----
+* Last Modified: Wednesday, 27th October 2021
+* -----
+* Copyright 2021 - 2021 FluffyKitty
+*/
 
 :root {
-    --border-radius: 4dp;
+    font-size: 14pt;
+    /* Custom Colours */
+    --background-color: #d6a6f4;
+    --border-radius: 8pt;
+    --custom-primary: #865aa5;
+    --custom-secondary: #944869;
+    --app-sidebar-link: white;
+    /* Kagi Colours */
+    /*
+    --background-color: #262837;
+    --page-text-color: #e5e5e5;
+    --beta-tag-bg: #4835bc;
+    --beta-tag-text: #F2F0E7;
+    --beta-tag-inside-corners: #9DEBFE;
+    --color-primary: #e5e5e5;
+    --color-secondary: #191919;
+    --color-primary-dim_1: rgba(229, 229, 229, 0.1);
+    --color-primary-dim_2: rgba(229, 229, 229, 0.2);
+    --color-primary-dim_25: rgba(229, 229, 229, 0.25);
+    --color-primary-dim_3: rgba(229, 229, 229, 0.3);
+    --color-primary-dim_4: rgba(229, 229, 229, 0.4);
+    --color-primary-dim_5: rgba(229, 229, 229, 0.5);
+    --color-primary-dim_6: rgba(229, 229, 229, 0.6);
+    --color-primary-dim_7: rgba(229, 229, 229, 0.7);
+    --color-primary-dim_8: rgba(229, 229, 229, 0.8);
+    --color-primary-dim_9: rgba(229, 229, 229, 0.9);
+    --color-secondary-dim_1: rgba(25, 25, 25, 0.1);
+    --color-secondary-dim_2: rgba(25, 25, 25, 0.2);
+    --color-secondary-dim_4: rgba(25, 25, 25, 0.4);
+    --color-secondary-dim_5: rgba(25, 25, 25, 0.5);
+    --color-secondary-dim_6: rgba(25, 25, 25, 0.6);
+    --color-secondary-dim_7: rgba(25, 25, 25, 0.7);
+    --color-secondary-dim_8: rgba(25, 25, 25, 0.8);
+    --color-primary_hover: #9debfe;
+    --color-primary_visited: #deb6f1;
+    --input-bg: #161820;
+    --doggo-color-1: #e5e5e5;
+    --header-bg: #161820;
+    --header-bg-opac: rgba(25, 25, 25, 0);
+    --header-bg_hover: #161820;
+    --auto-suggestion-bg: rgba(22, 24, 32, 0.96);
+    --auto-suggestion-border: var(--color-primary-dim_1);
+    --app-logo: #191919;
+    --app-logo-bg: #ffb319;
+    --footer-bg: #151515;
+    --control-center-dd-bg: #161820;
+    --control-center-dd-bg_hover: #161820;
+    --control-center-dd-list: #161820;
+    --control-center-dd-list-bg_hover: #1d1f29;
+    --control-center-bg: #1f1d2c;
+    --control-center-dd-border: #43465b;
+    --filter-dd-bg: #161820;
+    --cc-filters-active-bg: #404040;
+    --k-tooltip-bg: rgba(31, 31, 31, 0.9);
+    --k-tooltip-text: #e5e5e5;
+    --dd-hover-bg: #1d1f29;
+    --not-found-bubble-bg: var(--color-secondary);
+    --app-sidebar-bg: #1f1d2c;
+    --app-sidebar-item-border: rgba(229, 229, 229, 0.1);
+    --app-sidebar-link: var(--color-primary-dim_5);
+    --app-sidebar-nav-item-bg_hover: #ffb319;
+    --app-sidebar-nav-item-link_hover: var(--app-sidebar-bg);
+    --app-sidebar-nav-item-icon_hover: var(--color-primary);
+    --app-sidebar-lense-link: var(--color-primary-dim_5);
+    --app-sidebar-lense-link_hover: #ffffff;
+    --ranked-box-overlay-bg: rgba(18, 18, 18, 0.9);
+    --ranked-box-wrapper-bg: #262837;
+    --ranked-box-connection-secure: #60aa55;
+    --ranked-box-connection-insecure: #fd6820;
+    --ranked-box-icon-normal-bg: var(--ranked-box-wrapper-bg);
+    --ranked-box-tracker-no-info: #7d7d7d;
+    --ranked-box-toggle-switch-ch1-text: var(--color-primary);
+    --ranked-box-toggle-switch-ch3-svg-bg: var(--color-secondary);
+    --ranked-box-settings-btn-bg: var(--ranked-box-wrapper-bg);
+    --result-item-title-border: rgba(229, 229, 229, 0.5);
+    --result-item-title-border_hover: rgba(68, 77, 165, 0.5);
+    --result-rank-icon-stroke_promoted: var(--background-color);
+    --k-tooltip-tracker_bg: #333;
+    --result-item-highlight: #9debfe;
+    --search-result-content-text: var(--color-primary-dim_8);
+    --search-result-group-item-link: var(--color-primary-dim_9);
+    --search-result-url-link: var(--color-primary-dim_9);
+    --search-result-title: #ffffff;
+    --search-result-date-new-bg: #424667;
+    --search-result-date-new: #e5e5e5;
+    --inline-header-title: #ffffff;
+    --inline-widget-bg: #212433;
+    --related-item-bg: #1d1f29;
+    --username-button-bg: var(--inline-widget-bg);
+    --ranked-tabs-border: var(--color-primary-dim_2);
+    --video-item-bg: #191919;
+    --auto-sugg-bg_hover: rgba(229, 229, 229, 0.05);
+    --provider-breakdown_server: #075067;
+    --provider-breakdown_client: #9b6400;
+    --provider-breakdown_speed1: #6f6d22;
+    --provider-breakdown_speed2: #ab5a5a;
+    --provider-breakdown_speed3: #812503;
+    --widget-progress_bar: #e5e5e5;
+    --translate-fc_icon: #777676;
+    --rating-star_background: #222222;
+    --wiki-title: #ffffff;
+    --wiki-content-links: #ffffff;
+    --toggle-switch-knob-bg: #262837;
+    */
+    /* Kagi Dark Colours */
+    /*
+    --background-color: #262837;
+    --page-text-color: #e5e5e5;
+    --beta-tag-bg: #4835bc;
+    --beta-tag-text: #F2F0E7;
+    --beta-tag-inside-corners: #9DEBFE;
+    --color-primary: #e5e5e5;
+    --color-secondary: #191919;
+    --color-primary-dim_1: rgba(229, 229, 229, 0.1);
+    --color-primary-dim_2: rgba(229, 229, 229, 0.2);
+    --color-primary-dim_25: rgba(229, 229, 229, 0.25);
+    --color-primary-dim_3: rgba(229, 229, 229, 0.3);
+    --color-primary-dim_4: rgba(229, 229, 229, 0.4);
+    --color-primary-dim_5: rgba(229, 229, 229, 0.5);
+    --color-primary-dim_6: rgba(229, 229, 229, 0.6);
+    --color-primary-dim_7: rgba(229, 229, 229, 0.7);
+    --color-primary-dim_8: rgba(229, 229, 229, 0.8);
+    --color-primary-dim_9: rgba(229, 229, 229, 0.9);
+    --color-secondary-dim_1: rgba(25, 25, 25, 0.1);
+    --color-secondary-dim_2: rgba(25, 25, 25, 0.2);
+    --color-secondary-dim_4: rgba(25, 25, 25, 0.4);
+    --color-secondary-dim_5: rgba(25, 25, 25, 0.5);
+    --color-secondary-dim_6: rgba(25, 25, 25, 0.6);
+    --color-secondary-dim_7: rgba(25, 25, 25, 0.7);
+    --color-secondary-dim_8: rgba(25, 25, 25, 0.8);
+    --color-primary_hover: #9debfe;
+    --color-primary_visited: #deb6f1;
+    --input-bg: #161820;
+    --doggo-color-1: #e5e5e5;
+    --header-bg: #161820;
+    --header-bg-opac: rgba(25, 25, 25, 0);
+    --header-bg_hover: #161820;
+    --auto-suggestion-bg: rgba(22, 24, 32, 0.96);
+    --auto-suggestion-border: var(--color-primary-dim_1);
+    --app-logo: #191919;
+    --app-logo-bg: #ffb319;
+    --footer-bg: #151515;
+    --control-center-dd-bg: #161820;
+    --control-center-dd-bg_hover: #161820;
+    --control-center-dd-list: #161820;
+    --control-center-dd-list-bg_hover: #1d1f29;
+    --control-center-bg: #1f1d2c;
+    --control-center-dd-border: #43465b;
+    --filter-dd-bg: #161820;
+    --cc-filters-active-bg: #404040;
+    --k-tooltip-bg: rgba(31, 31, 31, 0.9);
+    --k-tooltip-text: #e5e5e5;
+    --dd-hover-bg: #1d1f29;
+    --not-found-bubble-bg: var(--color-secondary);
+    --app-sidebar-bg: #1f1d2c;
+    --app-sidebar-item-border: rgba(229, 229, 229, 0.1);
+    --app-sidebar-link: var(--color-primary-dim_5);
+    --app-sidebar-nav-item-bg_hover: #ffb319;
+    --app-sidebar-nav-item-link_hover: var(--app-sidebar-bg);
+    --app-sidebar-nav-item-icon_hover: var(--color-primary);
+    --app-sidebar-lense-link: var(--color-primary-dim_5);
+    --app-sidebar-lense-link_hover: #ffffff;
+    --ranked-box-overlay-bg: rgba(18, 18, 18, 0.9);
+    --ranked-box-wrapper-bg: #262837;
+    --ranked-box-connection-secure: #60aa55;
+    --ranked-box-connection-insecure: #fd6820;
+    --ranked-box-icon-normal-bg: var(--ranked-box-wrapper-bg);
+    --ranked-box-tracker-no-info: #7d7d7d;
+    --ranked-box-toggle-switch-ch1-text: var(--color-primary);
+    --ranked-box-toggle-switch-ch3-svg-bg: var(--color-secondary);
+    --ranked-box-settings-btn-bg: var(--ranked-box-wrapper-bg);
+    --result-item-title-border: rgba(229, 229, 229, 0.5);
+    --result-item-title-border_hover: rgba(68, 77, 165, 0.5);
+    --result-rank-icon-stroke_promoted: var(--background-color);
+    --k-tooltip-tracker_bg: #333;
+    --result-item-highlight: #9debfe;
+    --search-result-content-text: var(--color-primary-dim_8);
+    --search-result-group-item-link: var(--color-primary-dim_9);
+    --search-result-url-link: var(--color-primary-dim_9);
+    --search-result-title: #ffffff;
+    --search-result-date-new-bg: #424667;
+    --search-result-date-new: #e5e5e5;
+    --inline-header-title: #ffffff;
+    --inline-widget-bg: #212433;
+    --related-item-bg: #1d1f29;
+    --username-button-bg: var(--inline-widget-bg);
+    --ranked-tabs-border: var(--color-primary-dim_2);
+    --video-item-bg: #191919;
+    --auto-sugg-bg_hover: rgba(229, 229, 229, 0.05);
+    --provider-breakdown_server: #075067;
+    --provider-breakdown_client: #9b6400;
+    --provider-breakdown_speed1: #6f6d22;
+    --provider-breakdown_speed2: #ab5a5a;
+    --provider-breakdown_speed3: #812503;
+    --widget-progress_bar: #e5e5e5;
+    --translate-fc_icon: #777676;
+    --rating-star_background: #222222;
+    --wiki-title: #ffffff;
+    --wiki-content-links: #ffffff;
+    --toggle-switch-knob-bg: #262837;
+    */
+}
+
+.theme_dark {
+    --background-color: #302637;
+}
+
+.wiki-desc-box {
+    color: white;
+}
+
+.wikipediaResult a {
+    color: rgb(210, 191, 252);
+    &:hover {
+        font-weight: bolder;
+        color: rgb(172, 143, 235)
+    }
+}
+
+.wikipediaTable td span,
+.wikipediaTable td {
+    color: whitesmoke;
+}
+
+.__sri-time.--new {
+    background-color: #df8fbf;
+    color: black;
+    font-size: 1.2em;
 }
 
 .autosugg-landing {
     .search-submit-wrapper {
         #searchFormSubmit {
             &:before {
-                content: "Kagi  ";
+                content: "";
             }
             &:after {
-                content: "  Teehee...";
+                content: "  the Web";
             }
         }
     }
@@ -122,21 +349,95 @@ button {
 }
 
 .wikipediaContent {
-    background-color: var(--color-secondary-dim_7);
+    background-color: var(--custom-secondary);
     border: 2pt solid black;
     padding: .5em;
+    color: white;
 }
 
 .app-beta-tag {
     display: none
 }
 
-body {
-    background-color: whitesmoke;
-    background: linear-gradient(180deg, var(--result-item-highlight) 0%, var(--inline-widget-bg) 100%);
-}
-
 .app-box-center {
     background-color: whitesmoke;
-    background-color: var(--color-secondary-dim_6);
+}
+
+.search-input-container>.search-input {
+    background-color: var(--custom-primary);
+    color: whitesmoke;
+    padding: .6em;
+    border-radius: var(--border-radius);
+}
+
+.app-header .search-form:after:hover {
+    background: linear-gradient(90deg, var(--header-bg-opac) 0, var(--header-bg) 100%);
+}
+
+.app-header {
+    background-color: var(--header-bg_hover);
+}
+
+.search-form .search-input:not(:placeholder-shown)~.search-form-icons .clear-search:hover {
+    background-color: grey;
+}
+
+.search-form .search-form-icons {
+    display: flex;
+}
+
+input#searchBar.search-input {
+    //    color: white;
+}
+
+div.app-sidebar-content,
+.app-sidebar {
+    background-color: var(--custom-secondary) !important;
+    color: whitesmoke;
+}
+
+.wikipediaResult .wiki-image.img img {
+    border-radius: var(--border-radius);
+}
+
+.widgetContent .widgetItems .widgetItem {
+    background-color: var(--custom-secondary);
+}
+
+.widget-provider {
+    color: white;
+}
+
+.box {
+    background-color: var(--custom-secondary);
+    &:hover {
+        .videoResultTitle {
+            color: white
+        }
+    }
+}
+
+.widget-time-ago {
+    color: white
+}
+
+div.widgetItems a:hover,
+div.video-items a:hover {
+    div.widget-body {
+        background-color: #944869 !important;
+        transition: .2s ease-out !important;
+    }
+}
+
+.theme_dark {
+    .app-box-center {
+        background-color: var(--background-color);
+    }
+    div.app-sidebar-content,
+    .app-sidebar {
+        background-color: var(--custom-secondary);
+    }
+    .wikipediaContent {
+        border-color: white;
+    }
 }
